@@ -54,13 +54,6 @@ window.addEventListener("scroll", function () {
   nav.classList.toggle("sticky", window.scrollY > 0);
 });
 
-function onNavHover(x) {
-  x.classList.add("active");
-}
-function onNavOut(x) {
-  x.classList.remove("active");
-}
-
 const SlidingNavbar = () => {
   const burger = document.querySelector(".nav-burger");
   const nav = document.querySelector(".nav-links");

@@ -91,6 +91,13 @@ nav ul li a {
   font-weight: 600;
   transition: 0.6s;
 }
+
+nav ul li a:hover {
+  color: #ffff;
+  background-color: #6cbcce;
+  border-radius: 10px;
+  padding: 10px;
+}
 .active {
   color: #ffff;
   background-color: #6cbcce;
