@@ -33,12 +33,12 @@ window.addEventListener("scroll", function () {
       features.classList.remove("active");
       how.classList.remove("active");
       review.classList.remove("active");
-    } else if (this.window.scrollY <= 1000 && this.window.scrollY >= 500) {
+    } else if (this.window.scrollY <= 1400 && this.window.scrollY >= 500) {
       features.classList.add("active");
       home.classList.remove("active");
       how.classList.remove("active");
       review.classList.remove("active");
-    } else if (this.window.scrollY <= 3000 && this.window.scrollY >= 1000) {
+    } else if (this.window.scrollY <= 3400 && this.window.scrollY >= 1400) {
       how.classList.add("active");
       features.classList.remove("active");
       home.classList.remove("active");
@@ -53,6 +53,13 @@ window.addEventListener("scroll", function () {
 
   nav.classList.toggle("sticky", window.scrollY > 0);
 });
+
+function onNavHover(x) {
+  x.classList.add("active");
+}
+function onNavOut(x) {
+  x.classList.remove("active");
+}
 
 const SlidingNavbar = () => {
   const burger = document.querySelector(".nav-burger");
