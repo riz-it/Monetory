@@ -4,22 +4,24 @@ window.addEventListener("scroll", function () {
   var how = document.getElementById("how");
   var review = document.getElementById("review");
   var features = document.getElementById("features");
-  var phone = window.matchMedia("(max-width: 575px)");
-  var landscapePhone = window.matchMedia("(max-width: 787px)");
-  var tablet = window.matchMedia("(max-width: 991px)");
+  var phone = window.matchMedia("(min-width: 0px) and (max-width: 575px)");
+  var landscapePhone = window.matchMedia(
+    "(max-width: 787px) and (min-width: 576px)"
+  );
+  var tablet = window.matchMedia("(max-width: 991px) and (min-width: 788px)");
   var dekstop = window.matchMedia("(min-width: 1000px)");
   if (phone.matches) {
-    if (this.window.scrollY <= 500) {
+    if (this.window.scrollY <= 400) {
       home.classList.add("active");
       features.classList.remove("active");
       how.classList.remove("active");
       review.classList.remove("active");
-    } else if (this.window.scrollY <= 800 && this.window.scrollY >= 500) {
+    } else if (this.window.scrollY <= 800 && this.window.scrollY > 400) {
       features.classList.add("active");
       home.classList.remove("active");
       how.classList.remove("active");
       review.classList.remove("active");
-    } else if (this.window.scrollY <= 1300 && this.window.scrollY >= 800) {
+    } else if (this.window.scrollY <= 1600 && this.window.scrollY > 800) {
       how.classList.add("active");
       features.classList.remove("active");
       home.classList.remove("active");
@@ -91,7 +93,7 @@ window.addEventListener("scroll", function () {
       home.classList.remove("active");
       how.classList.remove("active");
       review.classList.remove("active");
-    } else if (this.window.scrollY <= 3400 && this.window.scrollY >= 1400) {
+    } else if (this.window.scrollY <= 2600 && this.window.scrollY >= 1400) {
       how.classList.add("active");
       features.classList.remove("active");
       home.classList.remove("active");
