@@ -850,15 +850,15 @@ span {
     }
 
     12% {
-      left: -65%;
+      left: -110%;
     }
 
     22% {
-      left: -65%;
+      left: -110%;
     }
 
     24% {
-      left: -139%;
+      left: -200%;
     }
   }
 
@@ -877,7 +877,7 @@ span {
   .card-round {
     height: 3vh;
     width: 3vh;
-    padding-top: 1.2vh;
+    padding-top: 1vh;
   }
 
   .wrapper-f {
