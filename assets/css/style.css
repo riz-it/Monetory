@@ -38,7 +38,7 @@ nav.sticky {
 nav .logo {
   position: relative;
   transition: 0.6s;
-  width: 5vw;
+  width: 4vw;
 }
 
 nav .title {
@@ -47,7 +47,8 @@ nav .title {
   color: #4a4a4a;
   text-decoration: none;
   margin-top: 0.5vw;
-  font-size: 3vw;
+  font-size: 2.5vw;
+  margin-left: 1vw;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.6s;
@@ -86,7 +87,7 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
   margin: 0 15px;
   text-decoration: none;
@@ -325,7 +326,6 @@ h2 {
   margin-bottom: 0%;
 }
 
-
 .ml-5 {
   margin-left: 5%;
 }
@@ -399,7 +399,7 @@ h4 {
 }
 
 h1 {
-  font-size: 4vw;
+  font-size: 3vw;
   color: #555555;
   transition: 0.6s;
   z-index: 100;
@@ -419,7 +419,7 @@ p {
 
 .description {
   font-weight: 400;
-  font-size: 1.45vw;
+  font-size: 2vw;
   color: #646464;
   transition: 0.6s;
 }
@@ -443,8 +443,8 @@ span {
 }
 
 .title {
-  font-weight: 10000vw;
-  font-size: 3vw;
+  font-weight: 800;
+  font-size: 2.6vw;
   color: #646464;
   transition: 0.6s;
 }
@@ -502,11 +502,11 @@ span {
 
 .close-modal {
   color: #555555;
-  font-size: 5vw;
+  font-size: 3vw;
   font-weight: bold;
   cursor: pointer;
   transition: 0.4s;
-  margin-top: -0.8vw;
+  margin-top: -0.1vw;
 }
 
 .close-modal:hover {
@@ -579,8 +579,8 @@ span {
 
 .card-cancel {
   cursor: pointer;
-  height: 5vw;
-  width: 5vw;
+  height: 3.6vw;
+  width: 3.6vw;
   margin: 4vh 5vh;
   background-color: #bbb;
   border-radius: 50%;
@@ -601,11 +601,11 @@ span {
   background-color: #ffffff;
   border: none;
   color: #575757;
-  padding: 2.5vw 5vw;
+  padding: 1.2vw 3vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.9vw;
+  font-size: 1.4vw;
   border-radius: 15px;
   transition: 0.6s;
   cursor: pointer;
@@ -619,6 +619,7 @@ span {
 @media (max-width: 1199.98px) {
   .main-content {
     overflow-x: hidden;
+    padding-top: 5vw;
   }
 
   .card-round {
@@ -637,16 +638,26 @@ span {
     width: 60%;
     height: 45%;
   }
+
+  .btn {
+    padding: 2.2vw 7vw;
+    font-size: 2vw;
+  }
 }
 
 @media (max-width: 991.98px) {
   .main-content {
     overflow-x: hidden;
+    padding-top: 8vw;
+  }
+
+  .ml-s {
+    margin-left: 8.5vw;
   }
 
   nav .logo {
     margin-top: 4px;
-    width: 7vw;
+    width: 5vw;
   }
 
   nav.sticky {
@@ -664,11 +675,15 @@ span {
     }
 
     12% {
-      left: -35%;
+      left: -50%;
     }
 
     22% {
-      left: -35%;
+      left: -50%;
+    }
+
+    24% {
+      left: -100%;
     }
   }
 
@@ -682,12 +697,16 @@ span {
 
   nav .title {
     margin-top: 1%;
-    font-size: 5vw;
+    font-size: 3vw;
     margin-left: 1%;
   }
 
   nav ul li a {
     font-size: 14px;
+  }
+
+  .text-or {
+    font-size: 2vw;
   }
 
   .img {
@@ -709,7 +728,20 @@ span {
     width: 60vw;
   }
   .card:hover {
-    width : 65vw;
+    width: 65vw;
+  }
+
+  .btn {
+    padding: 2.4vw 6vw;
+    font-size: 2vw;
+  }
+
+  h1 {
+    font-size: 3vw;
+  }
+
+  p {
+    font-size: 2vw;
   }
 }
 
@@ -728,11 +760,15 @@ span {
     }
 
     12% {
-      left: -45%;
+      left: -60%;
     }
 
     22% {
-      left: -45%;
+      left: -60%;
+    }
+
+    24% {
+      left: -120%;
     }
   }
 
@@ -772,6 +808,7 @@ span {
 
   .main-content {
     overflow-x: hidden;
+    padding-top: 8vh;
   }
 
   nav.sticky {
@@ -784,9 +821,8 @@ span {
   }
 
   nav .title {
-    font-size: 5vw;
-    margin-top: 1%;
-    font-size: 20px;
+    font-size: 4vw;
+    margin-top: 2%;
   }
 
   .title {
@@ -795,13 +831,13 @@ span {
   }
 
   .description {
-    font-size: 1.45vw;
+    font-size: 3vw;
   }
 
   .card-round {
-    height: 6vh;
-    width: 6vh;
-    padding-top: 2vh;
+    height: 6vw;
+    width: 6vw;
+    padding-top: 1vw;
   }
 
   .container-head {
@@ -836,6 +872,10 @@ span {
     width: 20px;
   }
 
+  .text-or {
+    font-size: 3vw;
+  }
+
   .img {
     width: 80%;
   }
@@ -846,6 +886,24 @@ span {
     margin-top: 10vh;
   }
 
+  .card-cancel {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .close-modal {
+    font-size: 3vw;
+    margin-top: -0.1vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  .text-info {
+    font-size: 2.2vw;
+  }
+
   #fixbtn {
     display: flex;
     justify-content: center;
@@ -853,6 +911,11 @@ span {
 
   .image-footer {
     width: 15vh;
+  }
+
+  .btn {
+    padding: 5vw 14vw;
+    font-size: 3vw;
   }
 
   @keyframes slidy {
@@ -865,15 +928,15 @@ span {
     }
 
     12% {
-      left: -110%;
+      left: -60%;
     }
 
     22% {
-      left: -110%;
+      left: -60%;
     }
 
     24% {
-      left: -200%;
+      left: -120%;
     }
   }
 
@@ -890,9 +953,9 @@ span {
   }
 
   .card-round {
-    height: 3vh;
-    width: 3vh;
-    padding-top: 1vh;
+    height: 7vw;
+    width: 7vw;
+    padding-top: 1vw;
   }
 
   .wrapper-f {
@@ -911,6 +974,7 @@ span {
 
   .main-content {
     overflow-x: hidden;
+    padding-top: 0;
   }
 
   nav.sticky {
@@ -923,7 +987,7 @@ span {
   }
 
   nav .title {
-    margin-top: 1.7%;
+    margin-top: 1.4%;
     font-size: 5vw;
   }
 
@@ -933,7 +997,7 @@ span {
   }
 
   .description {
-    font-size: 1.45vw;
+    font-size: 3vw;
   }
 
   .container-head {
@@ -979,13 +1043,18 @@ span {
   .hero {
     width: 65vw;
   }
+
+  h1 {
+    font-size: 3.4vh;
+  }
+
   .h1head {
-    width: 50%;
-    transform: translate(55%, -50%);
+    width: 90%;
+    transform: translate(10%, -40%);
   }
   .phead {
-    width: 50%;
-    transform: translate(55%, -50%);
+    width: 70%;
+    transform: translate(25%, -30%);
   }
 
   #fixbtn {
@@ -1004,8 +1073,8 @@ span {
     transition: 0.4s;
   }
 
-  .ml-s {
-    margin-left: 10vw;
+  p {
+    font-size: 3.4vw;
   }
 }
 
