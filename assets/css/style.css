@@ -164,7 +164,7 @@ h2 {
   background-color: #85dbee;
   padding-top: 1.5vh;
   height: 4vw;
-  width: 2vw;
+  width: 4vw;
   border-radius: 50%;
 }
 
@@ -619,7 +619,7 @@ span {
   }
 
   .img {
-    width: 60%;
+    width: 80%;
   }
 
   .avatar {
@@ -683,13 +683,13 @@ span {
   }
 
   .img {
-    width: 40%;
+    width: 80%;
   }
 
   .card-round {
-    height: 5vh;
-    width: 5vh;
-    padding-top: 0.6vh;
+    height: 7vh;
+    width: 7vh;
+    padding-top: 2vh;
   }
 
   .modal-content {
@@ -726,7 +726,7 @@ span {
     padding-left: 3vh;
     padding-top: 3vh;
     width: 80%;
-    height: 35%;
+    height: 40%;
   }
 
   .avatar {
@@ -784,9 +784,9 @@ span {
   }
 
   .card-round {
-    height: 30px;
-    width: 30px;
-    padding-top: 5px;
+    height: 6vh;
+    width: 6vh;
+    padding-top: 2vh;
   }
 
   .container-head {
@@ -819,6 +819,10 @@ span {
 
   .nav-burger div {
     width: 20px;
+  }
+
+  .img {
+    width: 80%;
   }
 }
 
@@ -863,7 +867,7 @@ span {
     padding-left: 3vh;
     padding-top: 3vh;
     width: 80%;
-    height: 30%;
+    height: 28%;
   }
 
   #footer {
@@ -871,9 +875,9 @@ span {
   }
 
   .card-round {
-    height: 30px;
-    width: 30px;
-    padding-top: 5px;
+    height: 4vh;
+    width: 4vh;
+    padding-top: 1.5vh;
   }
 
   .wrapper-f {
@@ -966,6 +970,10 @@ span {
   }
   #fixbtn {
     transform: translate(2.5vw, -50%);
+  }
+
+  .img {
+    width: 80%;
   }
 }
 
