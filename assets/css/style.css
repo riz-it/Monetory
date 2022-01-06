@@ -141,6 +141,7 @@ nav ul li a:hover {
 }
 
 h2 {
+  font-size: 2.5vw;
   z-index: 100;
   color: #585858;
 }
@@ -158,8 +159,8 @@ h2 {
 .card-round {
   background-color: #85dbee;
   padding-top: 1.5vh;
-  height: 7vh;
-  width: 7vh;
+  height: 4vw;
+  width: 2vw;
   border-radius: 50%;
 }
 
@@ -290,6 +291,10 @@ h2 {
   margin-bottom: 5%;
 }
 
+.mb-5vw {
+  margin-bottom: 10vw;
+}
+
 .mb-4 {
   margin-bottom: 4%;
 }
@@ -304,6 +309,10 @@ h2 {
 
 .mb-1 {
   margin-bottom: 1%;
+}
+
+.mb-0 {
+  margin-bottom: 0%;
 }
 
 .ml-5 {
@@ -372,21 +381,21 @@ h2 {
 }
 
 h4 {
-  font-size: 3vh;
+  font-size: 2.5vw;
   color: #444444;
   transition: 0.6s;
   z-index: 100;
 }
 
 h1 {
-  font-size: 6vh;
+  font-size: 4vw;
   color: #555555;
   transition: 0.6s;
   z-index: 100;
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.45vw;
   font-weight: 600;
   color: #646464;
   transition: 0.6s;
@@ -399,7 +408,7 @@ p {
 
 .description {
   font-weight: 400;
-  font-size: 4vh;
+  font-size: 1.45vw;
   color: #646464;
   transition: 0.6s;
 }
@@ -423,8 +432,8 @@ span {
 }
 
 .title {
-  font-weight: 400;
-  font-size: 6vh;
+  font-weight: 10000vw;
+  font-size: 3vw;
   color: #646464;
   transition: 0.6s;
 }
@@ -580,11 +589,11 @@ span {
   background-color: #ffffff;
   border: none;
   color: #575757;
-  padding: 20px 72px;
+  padding: 2.5vw 5vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.9vw;
   border-radius: 14px;
   transition: 0.6s;
   cursor: pointer;
@@ -606,7 +615,7 @@ span {
   }
 
   .img {
-    width: 96%;
+    width: 50%;
   }
 
   .avatar {
@@ -670,7 +679,7 @@ span {
   }
 
   .img {
-    width: 94%;
+    width: 20%;
   }
 
   .card-round {
@@ -746,9 +755,6 @@ span {
     overflow-x: hidden;
   }
 
-  #mockup2 {
-    margin-top: 10vh;
-  }
 
   nav.sticky {
     padding: 20px 40px;
@@ -764,19 +770,14 @@ span {
     font-size: 20px;
   }
 
-  h1 {
-    font-size: 4vh;
-  }
 
   .title {
-    font-size: 4vh;
+    font-weight: 10000vw;
+    font-size: 3vw;
   }
 
   .description {
-    font-size: 2vh;
-  }
-  p {
-    font-size: 15px;
+    font-size: 1.45vw;
   }
 
   .card-round {
@@ -875,11 +876,6 @@ span {
     padding: 0 10% 0;
   }
 
-  .btn {
-    padding: 13px 45px;
-    font-size: 12px;
-  }
-
   nav .logo {
     margin-top: 4px;
     width: 50%;
@@ -890,9 +886,6 @@ span {
     overflow-x: hidden;
   }
 
-  #mockup2 {
-    margin-top: 10vh;
-  }
 
   nav.sticky {
     padding: 20px 40px;
@@ -908,19 +901,13 @@ span {
     font-size: 20px;
   }
 
-  h1 {
-    font-size: 3.8vh;
-  }
-
   .title {
-    font-size: 3vh;
+    font-weight: 10000vw;
+    font-size: 3vw;
   }
 
   .description {
-    font-size: 1.5vh;
-  }
-  p {
-    font-size: 15px;
+    font-size: 1.45vw;
   }
 
   .container-head {
@@ -955,8 +942,8 @@ span {
     width: 20px;
   }
 
-  .hero {
-    display: none;
+  #flex {
+    flex-direction: column-reverse;
   }
 }
 
