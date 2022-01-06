@@ -153,15 +153,16 @@ h2 {
 
 .card-round {
   background-color: #85dbee;
-  padding-top: 5%;
-  height: 50px;
-  width: 50px;
+  padding-top: 1.5vh;
+  height: 7vh;
+  width: 7vh;
   border-radius: 50%;
 }
 
 .img {
   cursor: pointer;
-  width: 70%;
+  width: 100%;
+  transition: 0.6s;
 }
 
 .white {
@@ -362,7 +363,8 @@ h2 {
 }
 
 .avatar {
-  width: 5%;
+  width: 7%;
+  transition: 0.6s;
 }
 
 h4 {
@@ -471,6 +473,7 @@ span {
   border: 1px solid #888;
   border-radius: 10px;
   width: 50%;
+  transition: 0.6s;
 }
 
 .close-modal {
@@ -575,7 +578,24 @@ span {
 @media (max-width: 1199.98px) {
   .main-content {
     overflow-x: hidden;
-    height: 500vh;
+    height: 615vh;
+  }
+
+  .card-round {
+    height: 6vh;
+    width: 6vh;
+  }
+
+  .img {
+    width: 96%;
+  }
+
+  .avatar {
+    width: 8%;
+  }
+  .modal-content {
+    width: 60%;
+    height: 45%;
   }
 }
 
@@ -595,6 +615,10 @@ span {
     background: #f3fbfe;
   }
 
+  .avatar {
+    width: 10%;
+  }
+
   nav {
     padding: 25px 20px;
   }
@@ -608,6 +632,21 @@ span {
   nav ul li a {
     font-size: 14px;
   }
+
+  .img {
+    width: 94%;
+  }
+
+  .card-round {
+    height: 5vh;
+    width: 5vh;
+    padding-top: 0.6vh;
+  }
+
+  .modal-content {
+    width: 80%;
+    height: 45%;
+  }
 }
 
 @media (max-width: 787px) {
@@ -615,8 +654,16 @@ span {
     margin-top: 15vh;
   }
 
+  .modal-content {
+    padding-right: 3vh;
+    padding-left: 3vh;
+    padding-top: 3vh;
+    width: 80%;
+    height: 35%;
+  }
+
   .avatar {
-    width: 15%;
+    width: 10%;
   }
 
   span {
@@ -679,6 +726,12 @@ span {
     font-size: 15px;
   }
 
+  .card-round {
+    height: 30px;
+    width: 30px;
+    padding-top: 5px;
+  }
+
   .container-head {
     margin-top: 4%;
   }
@@ -710,10 +763,6 @@ span {
   .nav-burger div {
     width: 20px;
   }
-
-  .main-content {
-    overflow-x: hidden;
-  }
 }
 
 @media (max-width: 575px) {
@@ -726,7 +775,7 @@ span {
     padding-left: 3vh;
     padding-top: 3vh;
     width: 80%;
-    height: 50%;
+    height: 30%;
   }
 
   #footer {
@@ -736,12 +785,7 @@ span {
   .card-round {
     height: 30px;
     width: 30px;
-    border-radius: 50%;
-  }
-
-  .img {
-    width: 50%;
-    margin-top: 5%;
+    padding-top: 5px;
   }
 
   .wrapper-f {
@@ -765,6 +809,7 @@ span {
 
   .main-content {
     overflow-x: hidden;
+    height: 445vh;
   }
 
   #mockup2 {
@@ -776,16 +821,12 @@ span {
     background: #f3fbfe;
   }
 
-  .main-content {
-    height: 440vh;
-  }
-
   nav {
     padding: 25px 20px;
   }
 
   nav .title {
-    margin-top: 2%;
+    margin-top: 1.4%;
     font-size: 20px;
   }
 
