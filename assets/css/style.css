@@ -543,8 +543,8 @@ span {
 
 .elipse {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 1.5vh;
+  width: 1.5vh;
   margin: 0 5px;
   background-color: #bbb;
   border-radius: 50%;
@@ -896,7 +896,7 @@ span {
   }
 
   nav .title {
-    margin-top: 1.4%;
+    margin-top: 1.7%;
     font-size: 20px;
   }
 
