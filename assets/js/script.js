@@ -4,8 +4,36 @@ window.addEventListener("scroll", function () {
   var how = document.getElementById("how");
   var review = document.getElementById("review");
   var features = document.getElementById("features");
-  var x = window.matchMedia("(max-width: 768px)");
-  if (x.matches) {
+  var phone = window.matchMedia("(max-width: 575px)");
+  var landscapePhone = window.matchMedia("(max-width: 787px)");
+  var tablet = window.matchMedia("(max-width: 991px)");
+  var dekstop = window.matchMedia("(min-width: 1000px)");
+
+  if (phone.matches) {
+    if (this.window.scrollY <= 500) {
+      home.classList.add("active");
+      features.classList.remove("active");
+      how.classList.remove("active");
+      review.classList.remove("active");
+    } else if (this.window.scrollY <= 800 && this.window.scrollY >= 500) {
+      features.classList.add("active");
+      home.classList.remove("active");
+      how.classList.remove("active");
+      review.classList.remove("active");
+    } else if (this.window.scrollY <= 1300 && this.window.scrollY >= 800) {
+      how.classList.add("active");
+      features.classList.remove("active");
+      home.classList.remove("active");
+      review.classList.remove("active");
+    } else {
+      features.classList.remove("active");
+      home.classList.remove("active");
+      how.classList.remove("active");
+      review.classList.add("active");
+    }
+  }
+
+  if (landscapePhone.matches) {
     if (this.window.scrollY <= 500) {
       home.classList.add("active");
       features.classList.remove("active");
@@ -27,7 +55,33 @@ window.addEventListener("scroll", function () {
       how.classList.remove("active");
       review.classList.add("active");
     }
-  } else {
+  }
+
+  if (tablet.matches) {
+    if (this.window.scrollY <= 500) {
+      home.classList.add("active");
+      features.classList.remove("active");
+      how.classList.remove("active");
+      review.classList.remove("active");
+    } else if (this.window.scrollY <= 1600 && this.window.scrollY >= 500) {
+      features.classList.add("active");
+      home.classList.remove("active");
+      how.classList.remove("active");
+      review.classList.remove("active");
+    } else if (this.window.scrollY <= 3000 && this.window.scrollY >= 1600) {
+      how.classList.add("active");
+      features.classList.remove("active");
+      home.classList.remove("active");
+      review.classList.remove("active");
+    } else {
+      features.classList.remove("active");
+      home.classList.remove("active");
+      how.classList.remove("active");
+      review.classList.add("active");
+    }
+  }
+
+  if (dekstop.matches) {
     if (this.window.scrollY <= 500) {
       home.classList.add("active");
       features.classList.remove("active");
