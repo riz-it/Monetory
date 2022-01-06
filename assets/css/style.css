@@ -184,7 +184,7 @@ h2 {
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   transition: 0.3s;
-  width: 40vh;
+  width: 25vw;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -192,7 +192,7 @@ h2 {
 .card:hover {
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.973);
   transition: 0.3s;
-  width: 41vh;
+  width: 28vw;
 }
 
 .card-layout {
@@ -208,7 +208,9 @@ h2 {
 .p-5 {
   padding: 5%;
 }
-
+.pl-5 {
+  padding-left: 5%;
+}
 .pb-5 {
   padding-bottom: 5%;
 }
@@ -275,6 +277,10 @@ h2 {
   margin-top: 5%;
 }
 
+.mt-1vw {
+  margin-top: 1vw;
+}
+
 .mt-4 {
   margin-top: 4%;
 }
@@ -318,6 +324,7 @@ h2 {
 .mb-0 {
   margin-bottom: 0%;
 }
+
 
 .ml-5 {
   margin-left: 5%;
@@ -495,10 +502,11 @@ span {
 
 .close-modal {
   color: #555555;
-  font-size: 24px;
+  font-size: 5vw;
   font-weight: bold;
   cursor: pointer;
   transition: 0.4s;
+  margin-top: -0.8vw;
 }
 
 .close-modal:hover {
@@ -571,8 +579,8 @@ span {
 
 .card-cancel {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 5vw;
+  width: 5vw;
   margin: 4vh 5vh;
   background-color: #bbb;
   border-radius: 50%;
@@ -695,6 +703,13 @@ span {
   .modal-content {
     width: 80%;
     height: 45%;
+  }
+
+  .card {
+    width: 60vw;
+  }
+  .card:hover {
+    width : 65vw;
   }
 }
 
@@ -925,6 +940,10 @@ span {
     margin-top: 14%;
   }
 
+  .container {
+    margin: auto;
+  }
+
   .nav-links {
     position: absolute;
     right: 0px;
@@ -975,6 +994,18 @@ span {
 
   .img {
     width: 80%;
+  }
+
+  .close-modal {
+    color: #555555;
+    font-size: 5vw;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .ml-s {
+    margin-left: 10vw;
   }
 }
 
