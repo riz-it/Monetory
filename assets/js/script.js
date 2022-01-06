@@ -8,7 +8,6 @@ window.addEventListener("scroll", function () {
   var landscapePhone = window.matchMedia("(max-width: 787px)");
   var tablet = window.matchMedia("(max-width: 991px)");
   var dekstop = window.matchMedia("(min-width: 1000px)");
-
   if (phone.matches) {
     if (this.window.scrollY <= 500) {
       home.classList.add("active");

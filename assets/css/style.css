@@ -525,6 +525,22 @@ span {
   }
 }
 
+.slider {
+  overflow: hidden;
+}
+
+.slider figure div {
+  float: left;
+}
+
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 15s slidy infinite;
+}
+
 .elipse {
   cursor: pointer;
   height: 15px;
@@ -578,7 +594,7 @@ span {
 @media (max-width: 1199.98px) {
   .main-content {
     overflow-x: hidden;
-    height: 615vh;
+    height: 627vh;
   }
 
   .card-round {
@@ -602,7 +618,7 @@ span {
 @media (max-width: 991.98px) {
   .main-content {
     overflow-x: hidden;
-    height: 610vh;
+    height: 622vh;
   }
 
   nav .logo {
@@ -613,6 +629,24 @@ span {
   nav.sticky {
     padding: 20px 40px;
     background: #f3fbfe;
+  }
+
+  @keyframes slidy {
+    0% {
+      left: 0%;
+    }
+
+    10% {
+      left: 0%;
+    }
+
+    12% {
+      left: -35%;
+    }
+
+    22% {
+      left: -35%;
+    }
   }
 
   .avatar {
@@ -654,6 +688,24 @@ span {
     margin-top: 15vh;
   }
 
+  @keyframes slidy {
+    0% {
+      left: 0%;
+    }
+
+    10% {
+      left: 0%;
+    }
+
+    12% {
+      left: -45%;
+    }
+
+    22% {
+      left: -45%;
+    }
+  }
+
   .modal-content {
     padding-right: 3vh;
     padding-left: 3vh;
@@ -690,7 +742,7 @@ span {
 
   .main-content {
     overflow-x: hidden;
-    height: 500vh;
+    height: 504vh;
   }
 
   #mockup2 {
@@ -768,6 +820,28 @@ span {
 @media (max-width: 575px) {
   .margin-section {
     margin-top: 10vh;
+  }
+
+  @keyframes slidy {
+    0% {
+      left: 0%;
+    }
+
+    10% {
+      left: 0%;
+    }
+
+    12% {
+      left: -65%;
+    }
+
+    22% {
+      left: -65%;
+    }
+
+    24% {
+      left: -139%;
+    }
   }
 
   .modal-content {
