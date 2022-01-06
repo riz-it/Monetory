@@ -769,12 +769,9 @@ span {
   }
 
   nav .title {
-<<<<<<< HEAD
     font-size: 5vw;
-=======
     margin-top: 1%;
     font-size: 20px;
->>>>>>> 913fd681b2d2b1cdbc0e0a6d23d134c1a41c6c2a
   }
 
   .title {
@@ -968,7 +965,7 @@ span {
     transform: translate(55%, -50%);
   }
   #fixbtn {
-    transform: translate(35vw, -50%);
+    transform: translate(2.5vw, -50%);
   }
 }
 
