@@ -38,16 +38,16 @@ nav.sticky {
 nav .logo {
   position: relative;
   transition: 0.6s;
+  width: 5vw;
 }
 
 nav .title {
   position: absolute;
-  margin-top: 0.6%;
   font-weight: 600;
   color: #4a4a4a;
-  margin-left: 5%;
   text-decoration: none;
-  font-size: 2em;
+  margin-top: 0.5vw;
+  font-size: 3vw;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.6s;
@@ -638,7 +638,7 @@ span {
 
   nav .logo {
     margin-top: 4px;
-    width: 70%;
+    width: 7vw;
   }
 
   nav.sticky {
@@ -673,8 +673,8 @@ span {
   }
 
   nav .title {
-    margin-top: 1.5%;
-    font-size: 20px;
+    margin-top: 1%;
+    font-size: 5vw;
     margin-left: 1%;
   }
 
@@ -698,7 +698,7 @@ span {
   }
 }
 
-@media (max-width: 787px) {
+@media (max-width: 768px) {
   .margin-section {
     margin-top: 15vh;
   }
@@ -739,7 +739,7 @@ span {
 
   nav .logo {
     margin-top: 4px;
-    width: 50%;
+    width: 7vw;
     margin-right: 4px;
   }
 
@@ -770,8 +770,7 @@ span {
   }
 
   nav .title {
-    margin-top: 2%;
-    font-size: 20px;
+    font-size: 5vw;
   }
 
 
@@ -882,7 +881,7 @@ span {
 
   nav .logo {
     margin-top: 4px;
-    width: 50%;
+    width: 7vw;
     margin-right: 4px;
   }
 
@@ -902,7 +901,7 @@ span {
 
   nav .title {
     margin-top: 1.7%;
-    font-size: 20px;
+    font-size: 5vw;
   }
 
   .title {
@@ -948,6 +947,21 @@ span {
 
   #flex {
     flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero {
+    width: 65vw;
+  }
+  .h1head {
+    width: 50%;
+    transform: translate(55%, -50%);
+  }
+  .phead {
+    width: 50%;
+    transform: translate(55%, -50%);
+  }
+  #fixbtn {
+    transform: translate(35vw, -50%);
   }
 }
 
