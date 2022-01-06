@@ -598,7 +598,7 @@ span {
   text-decoration: none;
   display: inline-block;
   font-size: 1.9vw;
-  border-radius: 14px;
+  border-radius: 15px;
   transition: 0.6s;
   cursor: pointer;
 }
@@ -759,7 +759,6 @@ span {
     overflow-x: hidden;
   }
 
-
   nav.sticky {
     padding: 20px 40px;
     background: #f3fbfe;
@@ -770,9 +769,13 @@ span {
   }
 
   nav .title {
+<<<<<<< HEAD
     font-size: 5vw;
+=======
+    margin-top: 1%;
+    font-size: 20px;
+>>>>>>> 913fd681b2d2b1cdbc0e0a6d23d134c1a41c6c2a
   }
-
 
   .title {
     font-weight: 10000vw;
@@ -825,6 +828,11 @@ span {
 @media (max-width: 575px) {
   .margin-section {
     margin-top: 10vh;
+  }
+
+  #fixbtn {
+    display: flex;
+    justify-content: center;
   }
 
   .image-footer {
@@ -888,7 +896,6 @@ span {
   .main-content {
     overflow-x: hidden;
   }
-
 
   nav.sticky {
     padding: 20px 40px;
