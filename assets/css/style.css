@@ -826,6 +826,11 @@ span {
     margin-top: 10vh;
   }
 
+  #fixbtn {
+    display: flex;
+    justify-content: center;
+  }
+
   .image-footer {
     width: 15vh;
   }
