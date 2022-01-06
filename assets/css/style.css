@@ -598,7 +598,7 @@ span {
   text-decoration: none;
   display: inline-block;
   font-size: 1.9vw;
-  border-radius: 14px;
+  border-radius: 15px;
   transition: 0.6s;
   cursor: pointer;
 }
@@ -759,7 +759,6 @@ span {
     overflow-x: hidden;
   }
 
-
   nav.sticky {
     padding: 20px 40px;
     background: #f3fbfe;
@@ -770,10 +769,9 @@ span {
   }
 
   nav .title {
-    margin-top: 2%;
+    margin-top: 1%;
     font-size: 20px;
   }
-
 
   .title {
     font-weight: 10000vw;
@@ -889,7 +887,6 @@ span {
   .main-content {
     overflow-x: hidden;
   }
-
 
   nav.sticky {
     padding: 20px 40px;
