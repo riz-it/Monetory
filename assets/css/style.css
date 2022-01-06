@@ -140,6 +140,10 @@ nav ul li a:hover {
   margin-top: -4%;
 }
 
+.display-3 {
+  font-size: 2vw;
+}
+
 h2 {
   font-size: 2.5vw;
   z-index: 100;
@@ -426,7 +430,7 @@ span {
 
 .text-name {
   font-weight: 600;
-  font-size: 3vh;
+  font-size: 2vw;
   color: #646464;
   transition: 0.6s;
 }
@@ -510,8 +514,8 @@ span {
   position: relative;
 }
 
-.w-20vh {
-  width: 20vh;
+.w-20vw {
+  width: 20vw;
 }
 
 @keyframes bouncy {
@@ -615,7 +619,7 @@ span {
   }
 
   .img {
-    width: 50%;
+    width: 60%;
   }
 
   .avatar {
@@ -679,7 +683,7 @@ span {
   }
 
   .img {
-    width: 20%;
+    width: 40%;
   }
 
   .card-round {
