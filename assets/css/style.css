@@ -146,7 +146,7 @@ nav ul li a:hover {
 }
 
 h2 {
-  font-size: 2.5vw;
+  font-size: 2.2vw;
   z-index: 100;
   color: #585858;
 }
@@ -193,7 +193,7 @@ h2 {
 .card:hover {
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.973);
   transition: 0.3s;
-  width: 28vw;
+  width: 26vw;
 }
 
 .card-layout {
@@ -392,7 +392,7 @@ h2 {
 }
 
 h4 {
-  font-size: 2.5vw;
+  font-size: 2.2vw;
   color: #444444;
   transition: 0.6s;
   z-index: 100;
@@ -406,7 +406,7 @@ h1 {
 }
 
 p {
-  font-size: 1.45vw;
+  font-size: 1.2vw;
   font-weight: 600;
   color: #646464;
   transition: 0.6s;
@@ -419,7 +419,7 @@ p {
 
 .description {
   font-weight: 400;
-  font-size: 2vw;
+  font-size: 1.6vw;
   color: #646464;
   transition: 0.6s;
 }
@@ -547,6 +547,57 @@ span {
   }
   100% {
     top: 0em;
+  }
+}
+
+.coursels {
+  width: 100%;
+  position: relative;
+}
+
+.coursels .coursel-content {
+  display: none;
+}
+
+.coursels .coursel-content img {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.coursels .panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.coursels .panel .prev,
+.coursels .panel .next {
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background: rgba(126, 126, 126, 0.2);
+  user-select: none;
+  transition: 0.6s ease;
+}
+
+.coursels .panel .prev:hover,
+.coursels .panel .next:hover {
+  background: rgb(134, 134, 134);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -886,6 +937,19 @@ span {
     margin-top: 10vh;
   }
 
+  .coursels .panel .prev,
+  .coursels .panel .next {
+    font-size: 1.6vw;
+  }
+
+  .features-title {
+    font-size: 4vw;
+  }
+
+  .features-subtitle {
+    font-size: 2.4vw;
+  }
+
   .card-cancel {
     width: 6vw;
     height: 6vw;
@@ -901,7 +965,8 @@ span {
   }
 
   .text-info {
-    font-size: 2.2vw;
+    font-weight: normal;
+    color: #555555;
   }
 
   #fixbtn {

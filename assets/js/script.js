@@ -1,15 +1,15 @@
 window.addEventListener("scroll", function () {
-  var nav = document.querySelector("nav");
-  var home = document.getElementById("home");
-  var how = document.getElementById("how");
-  var review = document.getElementById("review");
-  var features = document.getElementById("features");
-  var phone = window.matchMedia("(min-width: 0px) and (max-width: 575px)");
-  var landscapePhone = window.matchMedia(
+  let nav = document.querySelector("nav");
+  let home = document.getElementById("home");
+  let how = document.getElementById("how");
+  let review = document.getElementById("review");
+  let features = document.getElementById("features");
+  let phone = window.matchMedia("(min-width: 0px) and (max-width: 575px)");
+  let landscapePhone = window.matchMedia(
     "(max-width: 787px) and (min-width: 576px)"
   );
-  var tablet = window.matchMedia("(max-width: 991px) and (min-width: 788px)");
-  var dekstop = window.matchMedia("(min-width: 1000px)");
+  let tablet = window.matchMedia("(max-width: 991px) and (min-width: 788px)");
+  let dekstop = window.matchMedia("(min-width: 1000px)");
   if (phone.matches) {
     if (this.window.scrollY <= 400) {
       home.classList.add("active");
@@ -117,7 +117,6 @@ const SlidingNavbar = () => {
   burger.addEventListener("click", () => {
     nav.classList.toggle("nav-active");
 
-    //Animate Links
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = "";
@@ -128,18 +127,40 @@ const SlidingNavbar = () => {
       }
     });
 
-    //burger animation
     burger.classList.toggle("toggle");
   });
 };
 
+let indexCoursel = 0;
+showSlides(indexCoursel);
+
+function plusSlides(n) {
+  showSlides((indexCoursel += n));
+}
+
+function showSlides(n) {
+  let i;
+  let pageCoursel = document.getElementsByClassName("coursel-content");
+  if (n > pageCoursel.length) {
+    indexCoursel = 1;
+  } else if (n < 1) {
+    indexCoursel = pageCoursel.length;
+  }
+
+  for (i = 0; i < pageCoursel.length; i++) {
+    pageCoursel[i].style.display = "none";
+    // console.log(pageCoursel[i]);
+  }
+  pageCoursel[indexCoursel - 1].style.display = "block";
+}
+
 SlidingNavbar();
 
-var modal = document.getElementById("tryNow");
+let modal = document.getElementById("tryNow");
 
-var btn = document.getElementById("buttonTry");
+let btn = document.getElementById("buttonTry");
 
-var span = document.getElementsByClassName("close-modal")[0];
+let span = document.getElementsByClassName("close-modal")[0];
 
 btn.onclick = function () {
   modal.style.visibility = "visible";
